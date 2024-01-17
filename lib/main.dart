@@ -14,7 +14,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 
-
 Box? myBox;
 Future<Box> openHiveBox(String boxname) async {
   if (!Hive.isBoxOpen(boxname)) {
@@ -25,6 +24,7 @@ Future<Box> openHiveBox(String boxname) async {
 }
 
 void main() async {
+  print(' Im secnod branch');
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   // Register the adapter for UserModel
@@ -45,7 +45,6 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => SignUpCubit(),
-           
         ),
         BlocProvider(create: (context) => LoginCubit()),
         BlocProvider(create: (context) => SettingCubit()),

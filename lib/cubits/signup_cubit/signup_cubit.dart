@@ -10,7 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class SignUpCubit extends Cubit<SignupStates> {
   SignUpCubit() : super(SignupInitialState());
 
-  String linkServer = "http://10.0.2.2:8080/second/auth/signuppro.php";
+  String linkServer = "http://10.0.2.2:8080/second/auth/signup.php";
   String linkNotes =  "http://10.0.2.2:8080/second/notes/view.php";
   
   bool isValidEmail(String email) {

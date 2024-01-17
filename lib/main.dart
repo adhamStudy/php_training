@@ -1,5 +1,4 @@
 import 'package:backend_training/cubits/login_cubit/login_cubit.dart';
-import 'package:backend_training/cubits/notes_cubit/notes_cubit.dart';
 import 'package:backend_training/cubits/setting_cubit/setting_cubit.dart';
 import 'package:backend_training/cubits/signup_cubit/signup_cubit.dart';
 import 'package:backend_training/models/user_model.dart';
